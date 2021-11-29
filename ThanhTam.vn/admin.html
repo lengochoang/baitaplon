@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ADIMN</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflame.com/ajax/libs/jquery.js/1.16.0/umd/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+  .header ul li a{
+    color: black;
+  }
+  .header ul li {
+    border-radius: 5px;
+    border: 2px solid whites;
+    background-color: #fff8e1;
+  }
+</style>
+</head>
+
+<body>
+	<div class="top bg-dark header fixed-top mr-5">
+		<ul class="nav justify-content-end">
+			<li class="nav-item "> <a class="nav-link" href="dangky.html"> <i class="fas fa-users"></i>Đăng ký</a></li>
+			<li class="nav-item "><a class="nav-link" href="dangnhap.html">  <i class="fas fa-sign-in-alt"></i>Đăng Nhập</a></li>
+			<li class="nav-iteam "><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Trang chủ</a></li>
+		</ul>
+	</div>
+	<nav class="col-md-3 mt-5 " style="float: left; position: fixed;">
+		<div class="container">
+			<div class="row py-3">
+				<div class="col-md4">
+					<img src="images/avata_icon.png" class="rounded-circle" style="swidth:55px;" alt="">
+				</div>
+				<div class="col-md-8">
+					<span>Xin Chào, <strong>MR Tư</strong></span><br>
+					<a href="" class="mr-3 text-dark"><i class="fas fa-envelope-square"></i></a>
+					<a href="" class="mr-3 text-dark"><i class="fas fa-users"></i></a>
+					<a href="" class="text-dark"><i class="fas fa-cog"></i></a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<h5 class="text-center">QUẢN TRỊ HỆ THỐNG</h5>
+		<ul class="nav flex-column mb-3">
+			<li class="nav-iteam"><a href="" class="nav-link">Sản phẩm</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Má sản phẩm</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Đơn hàng</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Nhà cung ứng</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Khách Hàng</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Quảng cáo</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Slide</a></li>
+			<li class="nav-iteam"><a href="" class="nav-link">Chi nhánh</a></li>
+		</ul>
+	</nav>
+	<main class="main col-md-9 mt-5" style="float:right">
+		<div class="header border-bottom py-2">
+      <h3 class="text-center"><a href="" class="text-dark">Quản trị sản phẩm</a></h3>
+    </div>
+    <div class="addnew py-3">
+      <h5>Danh sách sản phẩm</h5>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Thêm</button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cập nhật sản phẩm</h5>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="">Mã sản phẩm</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Tên mã sản phẩm</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Sản phẩm</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button>Thêm</button>
+            <button data-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="text-center">
+          <td>STT</td>
+          <td>Mã sản phẩm</td>
+          <td>Tên mã sản phẩm</td>
+          <td>Tên sp</td>
+          <td>Thực hiện</td>
+        </tr>
+      </thead>
+      <tbody>
+      	<tr>
+          <td>1</td>
+          <td>J001</td>
+          <td>Giày</td>
+          <td>Giày nam 1</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>J002</td>
+          <td>Giày</td>
+          <td>Giày nam 2</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>J003</td>
+          <td>Giày</td>
+          <td>Giày nam 3</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>T001</td>
+          <td>Tạ</td>
+          <td>Tạ tay 1</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>T002</td>
+          <td>Tạ</td>
+          <td>Tạ tay tự chỉnh 1</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>T002</td>
+          <td>Tạ</td>
+          <td>Tạ tay tự chỉnh 2</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>X001</td>
+          <td>Xe đạp</td>
+          <td>Xe đạp tại nhà 1</td>
+          <td><a href=""><i class="fas fa-edit"></i></a> | <a href=""><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--link-->
+		<ul class="pagination link justify-content-center mt-5">
+			<li class="page-item active bg-primary"><a class="page-link" href="">1</a></li>
+			<li class="page-item"><a class="page-link" href="">2</a></li>
+			<li class="page-item"><a class="page-link" href="">3</a></li>
+			<li class="page-item"><a class="page-link" href="">4</a></li>
+			<li class="page-item"><a class="page-link" href="">.</a></li>
+			<li class="page-item"><a class="page-link" href="">.</a></li>
+			<li class="page-item"><a class="page-link" href="">Cuối</a></li>
+		</ul>
+	</main>
+</body>
+</html>
